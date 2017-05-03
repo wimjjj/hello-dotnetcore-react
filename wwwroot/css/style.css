@@ -4,6 +4,12 @@
     color: white;
 }
 
+.button-danger:hover {
+    background-color: lightsalmon;
+    border-color: lightsalmon;
+    color: white;
+}
+
 .button {
     margin-right: 10px;
 }
