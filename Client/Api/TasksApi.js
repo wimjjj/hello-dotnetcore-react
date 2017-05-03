@@ -12,8 +12,8 @@ export default class TasksApi{
                     console.log(result.status ,result.statusText);
                     reject();
                 }
-            })
-        })
+            });
+        });
     }
 
     static add(task){
@@ -51,6 +51,20 @@ export default class TasksApi{
                     console.log(result);
                     resolve();
                 }else{
+                    console.log(result.status ,result.statusText);
+                    reject();
+                }
+            });
+        });
+    }
+
+    static getLabels(){
+        return new Promise(function(resolve, reject){
+            Axios.get("/api/labels").then((result) => {
+                if(result.status == 200){
+                    console.log(result);
+                    resolve(result.data);
+                } else {
                     console.log(result.status ,result.statusText);
                     reject();
                 }

@@ -1,7 +1,16 @@
 import React from "react";
 
+import TasksApi from "./../Api/TasksApi";
+
 export default class Addtask extends React.Component{
 
+    constructor() {
+        super();
+
+        this.state = {labels: []}
+
+        TasksApi.getLabels().then((labels) => this.setState({labels}));
+    }
     addTask(e){
         let titleInput = document.getElementById("title");
         let title = titleInput.value;
@@ -27,9 +36,7 @@ export default class Addtask extends React.Component{
                     </div>
                     <div class="two columns">
                         <select id="label" class="u-full-width">
-                            <option value="1">School</option>
-                            <option value="2">Work</option>
-                            <option value="3">Private</option>
+                            {this.state.labels.map((label => <option value={label.id}>{label.title}</option>))}
                         </select>
                     </div>
                     <div class="two columns">
