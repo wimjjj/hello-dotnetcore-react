@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using dotnettodo.Data;
 using dotnettodo.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace dotnettodo.Controllers
 {
@@ -19,7 +20,8 @@ namespace dotnettodo.Controllers
         [HttpGetAttribute("/api/tasks")]
         public IActionResult Index()
         {
-            return new ObjectResult(context.ToDoTasks.ToList());
+            List<ToDoTask> tasks = context.ToDoTasks.Include(t => t.label).ToList();
+            return new ObjectResult(tasks);
         }
 
         [HttpPostAttribute]

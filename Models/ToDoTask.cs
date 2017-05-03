@@ -12,5 +12,10 @@ namespace dotnettodo.Models{
        
         [Required]
         public Boolean Done {get; set; }
+
+        [Required]
+        public int LabelID { get; set; }
+       
+        public Label label { get; set; }
     }
 }

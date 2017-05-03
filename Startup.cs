@@ -30,7 +30,8 @@ namespace dotnettodo
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
-            services.AddMvc();
+            services.AddMvc()
+            .AddJsonOptions(x => x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
             services.AddDbContext<DatabaseContext>(options => options.UseSqlite("Data Source=dotnettodo.db"));
         }
 

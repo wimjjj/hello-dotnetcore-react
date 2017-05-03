@@ -9,7 +9,8 @@ export default class Addtask extends React.Component{
 
         let task = {
             title,
-            done: false
+            done: false,
+            LabelID: 1
         };
 
         this.props.addTask(task);

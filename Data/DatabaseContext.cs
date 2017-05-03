@@ -9,5 +9,7 @@ namespace dotnettodo.Data{
         }
 
         public DbSet<ToDoTask> ToDoTasks { get; set; }
+
+        public DbSet<Label> Labels { get; set; }
     }
 }
