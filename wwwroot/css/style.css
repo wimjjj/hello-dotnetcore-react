@@ -1,0 +1,29 @@
+.button-danger {
+    background-color: lightcoral;
+    border-color: lightcoral;
+    color: white;
+}
+
+.button {
+    margin-right: 10px;
+}
+
+.task-done {
+    color: darkgrey;
+    text-decoration: line-through;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:lightgray;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:lightgray;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:lightgray;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:lightgray;
+}

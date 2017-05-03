@@ -15,10 +15,16 @@ export default class Addtask extends React.Component{
 
     render(){
         return (
-            <form onSubmit={function(e){e.preventDefault()}}>
-                <input type="text" name="title" id="title" placeholder="new task" />
-                <button onClick={this.addTask.bind(this)}>add</button>
-            </form>
+            <div class="row">
+                <form onSubmit={function(e){e.preventDefault()}}>
+                    <div class="ten columns">
+                        <input type="text" name="title" id="title" placeholder="new task" class="u-full-width" />
+                    </div>
+                    <div class="two columns">
+                        <button onClick={this.addTask.bind(this)} class="button button-primary u-full-width">add</button>
+                    </div>
+                </form>
+            </div>
         );
     }
 }

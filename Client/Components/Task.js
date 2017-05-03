@@ -20,10 +20,10 @@ export default class Task extends React.Component{
         let task = this.props.task;
 
         return (
-            <div class="task">
+            <div class={task.done ? "task-done" : "task-not-done"}>
                 <h2>{task.title}</h2>
-                <button onClick={this.switchDone.bind(this)}>{task.done ? "done" : "not done"}</button>
-                <button onClick={this.deleteTask.bind(this)}>delete</button>
+                <button onClick={this.switchDone.bind(this)} class="button">{task.done ? "done" : "not done"}</button>
+                <button onClick={this.deleteTask.bind(this)} class="button button-danger">delete</button>
             </div>
         )
     }
