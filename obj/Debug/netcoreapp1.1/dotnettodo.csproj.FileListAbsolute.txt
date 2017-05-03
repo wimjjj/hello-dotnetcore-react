@@ -1,0 +1,8 @@
+/home/wim/dotnettodo/bin/Debug/netcoreapp1.1/dotnettodo.deps.json
+/home/wim/dotnettodo/bin/Debug/netcoreapp1.1/dotnettodo.runtimeconfig.json
+/home/wim/dotnettodo/bin/Debug/netcoreapp1.1/dotnettodo.runtimeconfig.dev.json
+/home/wim/dotnettodo/bin/Debug/netcoreapp1.1/dotnettodo.dll
+/home/wim/dotnettodo/bin/Debug/netcoreapp1.1/dotnettodo.pdb
+/home/wim/dotnettodo/obj/Debug/netcoreapp1.1/dotnettodo.AssemblyInfo.cs
+/home/wim/dotnettodo/obj/Debug/netcoreapp1.1/dotnettodo.dll
+/home/wim/dotnettodo/obj/Debug/netcoreapp1.1/dotnettodo.pdb
