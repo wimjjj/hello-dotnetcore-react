@@ -14,9 +14,16 @@
     margin-right: 10px;
 }
 
-.task-done {
+.task-done h2 {
     color: darkgrey;
     text-decoration: line-through;
+}
+
+.label {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
 }
 
 h2 {

@@ -22,7 +22,9 @@ export default class Task extends React.Component{
         return (
             <div class={task.done ? "task-done" : "task-not-done"}>
                 <h2>{task.title}</h2>
-                <h6 style={{color: task.label.color}}>Label: {task.label.title}</h6>
+                <p>
+                        <b>Label: </b><span style={{backgroundColor: task.label.color}} class="label">{task.label.title}</span>
+                </p>
                 <button onClick={this.switchDone.bind(this)} class="button">{task.done ? "done" : "not done"}</button>
                 <button onClick={this.deleteTask.bind(this)} class="button button-danger">delete</button>
             </div>
